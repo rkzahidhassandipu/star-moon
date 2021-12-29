@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131419;
+    overflow: hidden;
+}
+
+.container{
+    width: 30em;
+    height: 30em;
+    position: relative;
+    background: url(bg.png);
+    background-size: cover;
+    z-index: 2;
+}
+.star i{
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 30px white,
+    0 0 40px white,
+    0 0 50px white;
+    animation: starsanimation 2s linear infinite;
+}
+@keyframes starsanimation {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
